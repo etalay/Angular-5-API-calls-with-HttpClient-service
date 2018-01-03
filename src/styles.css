@@ -1,0 +1,34 @@
+/* You can add global styles to this file, and also import other style files */
+
+#piechart { 
+    float:left;
+    width:50%;
+    overflow:hidden;
+    margin: 0;
+}
+
+#multibarchart { 
+    float:left;
+    width:50%;
+    overflow:hidden;
+    margin: 0;
+}
+
+#discretebarchart{
+    float:left;
+    width:50%;
+    overflow:hidden;
+    margin: 0;
+}
+
+#chart { 
+    float:left;
+    width:50%;
+    overflow:hidden;
+    margin: 0;
+}
+
+.center {
+    text-align: center;
+    color: #337ab7;
+}

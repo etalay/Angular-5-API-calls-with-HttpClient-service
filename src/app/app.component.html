@@ -1,0 +1,44 @@
+<div #scriptElement></div>
+<div class="page-header text-center">
+    <h1>Pise Application Test Graphs</h1>
+    <div >
+        <input placeholder="Please type your SQL code"  size="100"  #textbox type="text" [(ngModel)]="request" required>
+        <button type="button" class="btn btn-primary" (click)="filter()">Filter</button>
+        <button type="button" class="btn btn-primary" (click)="noFilter()">Without Filter</button>
+    </div> 
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6">
+            <h3>Discrete Bar Chart</h3>
+            <br>
+            <p>Stacked bar presents the information of Overview data in the same sequence on each bar. </p>
+        </div>
+        <div class="col-sm-6">
+            <h3>Pie Chart</h3>
+            <br>
+            <p>We can modify the pie chart by clicking to different years for a better view to compare different datas.</p>
+        </div>
+        <div class="row">
+        </div>
+    </div>
+</div>
+<div [innerHTML]="html_discreteBarChart"></div>
+<div [innerHTML]="html_pieChart"></div>
+<div id="asd" class="container">
+    <div class="row">
+        <div class="col-sm-6">
+            <h3>Multi Bar Chart</h3>
+            <br>
+            <p>Series 2 is generated for testing and showing the difference between Multi bar chart et discrete bar chart. </p>
+        </div>
+        <div class="row">
+        </div>
+        <div>
+            <div [innerHTML]="html_multiBarChart"></div>
+        </div>
+    </div>
+</div>
+
+
